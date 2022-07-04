@@ -37,6 +37,7 @@ body {
 }
 .rating-page p {
     line-height: 150%;
+    color: #b3b4b5;
 }
 .rating-btns {
     display: flex;
