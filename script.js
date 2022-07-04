@@ -11,7 +11,7 @@ const ratingPage = document.querySelector(".rating-page");
 const ThankYouPage = document.querySelector(".thank-you-page");
 
 //saving the rated button
-let ratedButton;
+let ratedButton = -1;
 
 //after pressing the submit button
 function submitFeedback() {
@@ -43,4 +43,10 @@ ratings.forEach((element) => {
 
         sub.addEventListener("click", submitFeedback);
     });
+});
+
+sub.addEventListener("click", function () {
+    if (ratedButton === -1) {
+        alert(`Please select a rating`);
+    }
 });
